@@ -11,6 +11,6 @@ A simple Visual Studio Code extension that adds a button to the Jupyter Notebook
 ## Usage
 
 1. Open any `.ipynb` notebook in VS Code.
-2. Hover over a cell or click the `...` menu in the cell toolbar.
+2. Open the context menu of a cell or click the `...` menu in the cell toolbar.
 3. Click the `Copy Cell ID` (copy icon) option.
 4. The cell ID is copied to your clipboard!
