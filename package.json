@@ -1,0 +1,40 @@
+{
+  "name": "jupyter-copy-cell-id",
+  "displayName": "Jupyter: Copy Cell ID",
+  "description": "Copy the Jupyter Cell ID from the cell title menu",
+  "version": "1.0.0",
+  "publisher": "chuxiongzhong",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chuxiongzhong/jupyter-copy-cell-id.git"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onNotebook:jupyter-notebook"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.copyJupyterCellId",
+        "title": "Copy Cell ID",
+        "category": "Jupyter",
+        "icon": "$(copy)"
+      }
+    ],
+    "menus": {
+      "notebook/cell/title": [
+        {
+          "command": "extension.copyJupyterCellId",
+          "when": "notebookType == 'jupyter-notebook'",
+          "group": "navigation"
+        }
+      ]
+    }
+  }
+}
